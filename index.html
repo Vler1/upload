@@ -1,92 +1,95 @@
 <!DOCTYPE html>
+<html lang="vi">
 <head>
-        <!-- <title>Trang cá nhân</title> -->
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="main.css">
-        <style>
-        </style>
-    </head>
-    <body>
-        <!-- tạo bảng đăng nhập -->
-        <div class="nav">
-            <ul class="nav-char1">
-                <li class="nav-item">Giới thiệu</li>
-                <li class="nav-item">Kết nối</li>
-                <li class="nav-item">Ứng dụng</li>
-            </ul>
-            <ul class="nav-char1">
-                <li class="nav-item">Đăng nhập</li>
-                <li class="nav-item">Đăng kí</li>
-            </ul>
-        </div>
-        <!-- tạo khối có chứa name và password -->
-        <div class="khoi 
-        char">
-            <div class="khoicon">
-                <div class="khoi name">
-                    <p style="font-size: 16px;">Name: <input type="text"></p>
-                </div>
-                <div class="khoi passord">
-                    <p style="font-size: 16px;">passord: <input type="text"></p>
-                </div>
-            </div>
-        </div>
-            <div class="dungchar">
-                <div class="dung1">
-                    <h2>Feature 1 </h2>
-                    <p>
-                        Đà Lạt ơi tháng sáu lại đến rồi
-                        Em có thấy mưa rơi đầy trước ngõ
-                        Mưa lất phất bay bay từng hạt nhỏ
-                        Thấm vai gầy cơn gió lướt khẽ run
-                        Chiều hoàng hôn Được
-                        Còn mộng mơ để người ước quay về
-                        Đà Lạt ơi tháng sáu lại nhớ ghê.</p>
-                </div>
-                <div class="dung2">
-                    <h2>Feature 2</h2>
-                    <p>
-                        Đông đã tới bên hiên nhà anh ạ
-                        Mùa sang mùa chiếc lá thẫn thờ rơi
-                        Về thôi anh giăng mắc những nụ cười
-                        Nơi ta hẹn rợp trời hoa cúc nở
-                        Em muốn gửi lời thầm thì trong gió
-                        Chở đại ngàn nỗi nhớ vẫn hằng mang
-                        Gọi anh về Hà Nội vẫn chứa chan
-                        Cho say nhé miên man mùa trăng mật
-                        Thơ em viết đâu phải vì niêm luật
-                        Tấm chân tình xin cất một lời yêu
-                        Kề bên em anh nhuộm tím cung chiều
-                        Môi với mắt gợi bao điều êm ả
-                        Về anh nhé yêu tưởng chừng như đã
-                        Bài thơ tình chất chứa vạn niềm mong
-                        Em nhớ anh đến khô cạn máu hồng
-                        Nghe trăn trở thương mùa đông lạnh giá
-                    </p>
-                </div>
-                <div class="dung3">
-                    <h2>Feature 3</h2>
-                    <p>
-                        Xa nhau rồi một nửa của đời tôi
-                        em quay bước tình phai phôi từ đó
-                        mùa hạ ơi sao về trên phố nhỏ
-                        để đường tình nay cỏ úa rêu phong
-                        Nhìn mưa giăng mà đau xé cõi lòng
-                        bong bóng nước phập phồng khơi nổi nhớ
-                        xưa đôi ta hòa chung cùng nhịp thở
-                        nay hết rồi dang dở nửa đường mây
-                        Có bao giờ người quay bước về đây
-                        cùng ôn lại những ngày xưa thân ái
-                        ta xa nhau đã bao mùa phượng trải
-                        chốn thiên đường vọng mãi khúc tình ca
-                        Cũng nơi này ngày đó tiễn em xa
-                        bao năm vẫn thiết tha hình bóng ấy
-                        dòng thư xưa còn đậm màu trang giấy
-                        nẻo ái tình chỉ thấy mặn bờ môi.
-                    </p>
-                </div>
-            </div>
-            </div>
-        </div>
-    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: white;
+            overflow: auto;
+            position: relative;
+            min-height: 100vh;
+        }
+        h1 {
+            font-size: 60px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+            animation: bounce 1.5s infinite, glow 2s infinite alternate;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 15px white; }
+            100% { text-shadow: 0 0 25px yellow; }
+        }
+        .message {
+            background: rgba(255, 255, 255, 0.95);
+            color: #ff4d6d;
+            padding: 25px 45px;
+            border-radius: 35px;
+            font-size: 24px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 20px auto;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            border: 4px solid #ff2850;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .balloon {
+            width: 50px;
+            height: 70px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -100px;
+            animation: float 6s infinite ease-in-out;
+            opacity: 0.8;
+            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes float {
+            0% { transform: translateY(0) scale(1); opacity: 1; }
+            100% { transform: translateY(-700px) scale(1.2); opacity: 0; }
+        }
+        .background-image {
+            display: block;
+            margin: 20px auto 0;
+            width: 80%;
+            max-width: 900px;
+            max-height: 400px;
+            object-fit: cover;
+            opacity: 0.9;
+            filter: blur(1px);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Chúc Mừng Sinh Nhật! 🎂</h1>
+    <div class="message">Chúc bạn có một ngày sinh nhật thật vui vẻ, hạnh phúc và tràn đầy yêu thương!. Đỗ vào trường mà mình mong muốn. Càng ngày càng đẹp nhóa 🎈🎁</div>
+    <img src="https://scontent.fvii1-1.fna.fbcdn.net/v/t39.30808-6/470568668_1702112000730079_3823444382315473785_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=nDdrGpOowhEQ7kNvgGY3sWP&_nc_oc=AdgqvIPcuxNSwLloRbc-ABtm2lgcH9cIvo5fLhxMu3enjP-Zkfy3WBQjkGj7pPqyq3B1XllnrytGxHqvM14UypMJ&_nc_zt=23&_nc_ht=scontent.fvii1-1.fna&_nc_gid=ASNz-QKWUGQb3TmG54qx5M9&oh=00_AYC7uyTmiIJKVhHBchfpJi4tQNWvsABN-G22r1n9gIVkgA&oe=67CA0B91   " alt="Hình nền sinh nhật" class="background-image">
+    <script>
+        function createBalloon() {
+            const balloon = document.createElement("div");
+            balloon.classList.add("balloon");
+            balloon.style.left = Math.random() * window.innerWidth + "px";
+            balloon.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+            balloon.style.width = Math.random() * 30 + 40 + "px";
+            balloon.style.height = Math.random() * 40 + 60 + "px";
+            document.body.appendChild(balloon);
+            setTimeout(() => balloon.remove(), 6000);
+        }
+        setInterval(createBalloon, 300);
+    </script>
+</body>
 </html>
